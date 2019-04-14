@@ -1,5 +1,7 @@
 import { StyleSheet } from "react-native";
 
+import { color } from "../../themes";
+
 export default StyleSheet.create({
   container: {
     paddingHorizontal: 15
@@ -19,7 +21,7 @@ export default StyleSheet.create({
     marginTop: 7
   },
   chapter: {
-    color: "#4AAFF7",
+    color: color.main,
     fontSize: 12,
     fontWeight: "bold",
     marginTop: 4

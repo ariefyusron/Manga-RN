@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, Text } from "react-native";
 
-import { ListHorizontal } from "../components";
+import { ListHorizontal, Carousel } from "../components";
 
 class Home extends Component {
   constructor() {
@@ -45,6 +45,7 @@ class Home extends Component {
     return (
       <View>
         <Text>Home</Text>
+        <Carousel data={this.state.data} />
         <ListHorizontal data={this.state.data} />
       </View>
     );
