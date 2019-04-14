@@ -30,10 +30,18 @@ export default StyleSheet.create({
     width: 100,
     marginHorizontal: 5
   },
-  image: {
+  wrapImage: {
     width: "100%",
     height: 140,
-    borderRadius: 18
+    borderRadius: 18,
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  image: {
+    width: "100%",
+    height: "100%",
+    borderRadius: 18,
+    position: "absolute"
   },
   title: {
     fontSize: 13,

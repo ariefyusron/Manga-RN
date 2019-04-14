@@ -40,6 +40,28 @@ class Home extends Component {
           chapter: "Chapter 171",
           image: "https://cdn.myanimelist.net/images/anime/11/90089l.jpg"
         }
+      ],
+      carousel: [
+        {
+          title: "Tate No Yuusha",
+          image:
+            "https://meownime.com/wp-content/uploads/2019/01/Tate-no-Yuusha-no-Nariagari-750x410.jpg"
+        },
+        {
+          title: "Tate No Yuusha",
+          image:
+            "https://meownime.com/wp-content/uploads/2019/01/Tate-no-Yuusha-no-Nariagari-750x410.jpg"
+        },
+        {
+          title: "Tate No Yuusha",
+          image:
+            "https://meownime.com/wp-content/uploads/2019/01/Tate-no-Yuusha-no-Nariagari-750x410.jpg"
+        },
+        {
+          title: "Tate No Yuusha",
+          image:
+            "https://meownime.com/wp-content/uploads/2019/01/Tate-no-Yuusha-no-Nariagari-750x410.jpg"
+        }
       ]
     };
   }
@@ -53,7 +75,7 @@ class Home extends Component {
             <Icon style={styles.icon} name="magnifying-glass" />
           </View>
         </View>
-        <Carousel data={this.state.data} />
+        <Carousel data={this.state.carousel} />
         <ListHorizontal
           title="Top Manga"
           data={this.state.data}

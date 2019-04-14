@@ -1,7 +1,15 @@
 import React from "react";
-import { View, Text, FlatList, Image, TouchableOpacity } from "react-native";
+import {
+  View,
+  Text,
+  FlatList,
+  Image,
+  TouchableOpacity,
+  ActivityIndicator
+} from "react-native";
 
 import styles from "./styles/ListHorizontalStyle";
+import { color } from "../themes";
 
 const ListHorizontal = props => (
   <View
@@ -24,7 +32,10 @@ const ListHorizontal = props => (
       keyExtractor={(item, index) => index.toString()}
       renderItem={({ item }) => (
         <View style={styles.content}>
-          <Image source={{ uri: item.image }} style={styles.image} />
+          <View style={styles.wrapImage}>
+            <ActivityIndicator color={color.other} />
+            <Image source={{ uri: item.image }} style={styles.image} />
+          </View>
           <Text style={styles.title}>{item.title}</Text>
           <Text style={styles.chapter}>{item.chapter}</Text>
         </View>
