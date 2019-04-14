@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, Text, ScrollView } from "react-native";
 
-import { ListColumn } from "../components";
+import { ListColumn, Search } from "../components";
 import styles from "./styles/ExploreStyle";
 
 class Explore extends Component {
@@ -72,6 +72,9 @@ class Explore extends Component {
   render() {
     return (
       <ScrollView style={{ backgroundColor: "#fff" }}>
+        <View>
+          <Search />
+        </View>
         <View style={styles.genre}>
           <View style={styles.headerGenre}>
             <Text style={styles.titleHeaderGenre}>Genres</Text>
