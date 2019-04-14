@@ -72,7 +72,7 @@ class Explore extends Component {
   render() {
     return (
       <ScrollView style={{ backgroundColor: "#fff" }}>
-        <View>
+        <View style={styles.search}>
           <Search />
         </View>
         <View style={styles.genre}>

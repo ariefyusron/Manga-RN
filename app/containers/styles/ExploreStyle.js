@@ -3,6 +3,10 @@ import { StyleSheet } from "react-native";
 import { color } from "../../themes";
 
 export default StyleSheet.create({
+  search: {
+    paddingHorizontal: 17.5,
+    marginTop: 21
+  },
   genre: {
     paddingHorizontal: 13,
     marginVertical: 35
