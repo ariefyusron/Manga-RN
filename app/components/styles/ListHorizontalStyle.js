@@ -20,7 +20,7 @@ export default StyleSheet.create({
   },
   otherLabel: {
     fontSize: 14,
-    color: "#6F6B6B"
+    color: color.other
   },
   wrapContent: {
     paddingHorizontal: 20,
