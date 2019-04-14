@@ -4,7 +4,27 @@ import { color } from "../../themes";
 
 export default StyleSheet.create({
   container: {
-    paddingHorizontal: 15
+    marginTop: 35
+  },
+  header: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingLeft: 20,
+    paddingRight: 10,
+    justifyContent: "space-between"
+  },
+  headerTitle: {
+    color: "#000",
+    fontSize: 16,
+    fontWeight: "bold"
+  },
+  otherLabel: {
+    fontSize: 14,
+    color: "#6F6B6B"
+  },
+  wrapContent: {
+    paddingHorizontal: 20,
+    marginTop: 10
   },
   content: {
     width: 100,

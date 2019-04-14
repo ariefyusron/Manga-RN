@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
+import { ScrollView, Text } from "react-native";
 
 import { ListHorizontal, Carousel } from "../components";
 
@@ -43,11 +43,16 @@ class Home extends Component {
   }
   render() {
     return (
-      <View>
+      <ScrollView>
         <Text>Home</Text>
         <Carousel data={this.state.data} />
-        <ListHorizontal data={this.state.data} />
-      </View>
+        <ListHorizontal
+          title="Top Manga"
+          data={this.state.data}
+          marginTop={20}
+        />
+        <ListHorizontal title="Recent Update" data={this.state.data} />
+      </ScrollView>
     );
   }
 }
