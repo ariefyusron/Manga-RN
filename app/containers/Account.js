@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
+import { Text, ScrollView } from "react-native";
 
 class Account extends Component {
   render() {
     return (
-      <View>
+      <ScrollView style={{ backgroundColor: "#fff" }}>
         <Text>Account</Text>
-      </View>
+      </ScrollView>
     );
   }
 }

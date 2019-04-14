@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
+import { ScrollView, Text } from "react-native";
 
 class Saved extends Component {
   render() {
     return (
-      <View>
+      <ScrollView style={{ backgroundColor: "#fff" }}>
         <Text>Saved</Text>
-      </View>
+      </ScrollView>
     );
   }
 }
