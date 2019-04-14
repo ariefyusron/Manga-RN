@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import { ScrollView, Text } from "react-native";
+import { ScrollView, View, Text } from "react-native";
+import Icon from "react-native-vector-icons/Entypo";
 
 import { ListHorizontal, Carousel } from "../components";
+import styles from "./styles/HomeStyles";
 
 class Home extends Component {
   constructor() {
@@ -44,7 +46,12 @@ class Home extends Component {
   render() {
     return (
       <ScrollView>
-        <Text>Home</Text>
+        <View style={styles.header}>
+          <Text style={styles.title}>HOME PAGE</Text>
+          <View style={styles.wrapIcon}>
+            <Icon style={styles.icon} name="magnifying-glass" />
+          </View>
+        </View>
         <Carousel data={this.state.data} />
         <ListHorizontal
           title="Top Manga"
