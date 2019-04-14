@@ -5,7 +5,10 @@ import styles from "./styles/ListHorizontalStyle";
 
 const ListHorizontal = props => (
   <View
-    style={props.marginTop ? { marginTop: props.marginTop } : styles.container}
+    style={[
+      props.marginTop ? { marginTop: props.marginTop } : styles.container,
+      { marginBottom: props.marginBottom || 0 }
+    ]}
   >
     <View style={styles.header}>
       <Text style={styles.headerTitle}>{props.title}</Text>

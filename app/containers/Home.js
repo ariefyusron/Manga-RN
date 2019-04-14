@@ -45,7 +45,7 @@ class Home extends Component {
   }
   render() {
     return (
-      <ScrollView>
+      <ScrollView style={{ backgroundColor: "#fff" }}>
         <View style={styles.header}>
           <Text style={styles.title}>HOME PAGE</Text>
           <View style={styles.wrapIcon}>
@@ -58,7 +58,11 @@ class Home extends Component {
           data={this.state.data}
           marginTop={20}
         />
-        <ListHorizontal title="Recent Update" data={this.state.data} />
+        <ListHorizontal
+          title="Recent Update"
+          data={this.state.data}
+          marginBottom={40}
+        />
       </ScrollView>
     );
   }
