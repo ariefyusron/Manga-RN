@@ -43,6 +43,7 @@ class Home extends Component {
       ]
     };
   }
+
   render() {
     return (
       <ScrollView style={{ backgroundColor: "#fff" }}>

@@ -1,4 +1,5 @@
-import ListHorizontal from "./ListHorizontal";
 import Carousel from "./Carousel";
+import ListHorizontal from "./ListHorizontal";
+import ListColumn from "./ListColumn";
 
-export { ListHorizontal, Carousel };
+export { ListHorizontal, Carousel, ListColumn };
